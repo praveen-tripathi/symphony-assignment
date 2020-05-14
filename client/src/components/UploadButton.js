@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 const UploadButton = ({ onChange, fileUploadHandler }) => {
   return (
@@ -11,6 +12,11 @@ const UploadButton = ({ onChange, fileUploadHandler }) => {
       </div>
     </div>
   );
+};
+
+UploadButton.propTypes = {
+  onChange: PropTypes.func,
+  fileUploadHandler: PropTypes.func,
 };
 
 export default UploadButton;

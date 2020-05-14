@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 const Table = ({ data }) => {
   return data.length > 0 ? (
@@ -17,6 +18,10 @@ const Table = ({ data }) => {
       </tbody>
     </table>
   ) : null;
+};
+
+Table.prototype = {
+  data: PropTypes.array,
 };
 
 export default React.memo(Table);

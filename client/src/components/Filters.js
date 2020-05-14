@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 const Filters = ({ onChange, filterValue }) => {
   return (
@@ -23,6 +24,14 @@ const Filters = ({ onChange, filterValue }) => {
       </div>
     </div>
   );
+};
+
+Filters.prototype = {
+  onChange: PropTypes.func,
+  filterValue: PropTypes.shape({
+    lines: PropTypes.string,
+    delimeter: PropTypes.string,
+  }),
 };
 
 export default Filters;
