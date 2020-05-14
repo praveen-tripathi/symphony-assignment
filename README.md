@@ -11,10 +11,10 @@ Cloning the repository
 Enter cloned directory
 
 `cd symphony-assignment/`
-Enter Backend directory and do `npm i`
+Enter Server directory and do `npm i`
 
 `cd symphony-assignment/server && npm i`
-Enter Frontend directory and do npm install
+Enter Client directory and do npm install
 
 `cd symphony-assignment/client && npm i`
 Starting the repository on your machine
