@@ -17,7 +17,7 @@ const MainContainer = () => {
     setSelectedFile(value);
   };
 
-  const handleUploadImage = (ev) => {
+  const handleUploadFile = (ev) => {
     ev.preventDefault();
     const { lines, delimeter } = filters;
 
@@ -92,7 +92,7 @@ const MainContainer = () => {
     <React.Fragment>
       <UploadButton
         onChange={handleFileChange}
-        fileUploadHandler={handleUploadImage}
+        fileUploadHandler={handleUploadFile}
       />
       {fileData.length > 0 && (
         <Filters onChange={handleFilterChange} filterValue={filters} />
